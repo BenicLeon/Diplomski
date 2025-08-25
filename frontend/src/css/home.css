@@ -1,0 +1,66 @@
+.home-container {
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdfdfd;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #222;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.link-card:hover {
+  border-color: #0077ff;
+  box-shadow: 0 4px 12px rgba(0, 119, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.link-card-icon {
+  font-size: 1.6rem;
+  color: #0077ff;
+}
+
+.link-card-text {
+  font-weight: 500;
+  font-size: 1rem;
+  flex: 1;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0 !important;
+    padding: 20px 16px;
+    margin-top: 50px; 
+  }
+}
+
